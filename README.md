@@ -7,6 +7,30 @@ Suspenders is the base Rails application used at
 
 ## Development with Docker
 
+First, we need [docker-compose](https://docs.docker.com/compose/).
+
+For macOS, you need to start a [docker-machine](https://docs.docker.com/machine/) first.
+
+```shell
+# if you have a docker machine named default
+$ docker-machine start default
+
+# or create one named default
+$ docker-machine create -d virtualbox default
+
+# then inject configuration of Docker machine into shell environment
+$ eval $(docker-machine env default)
+```
+
+Then start containers with `docker-compose`.
+
+```shell
+$ docker-compose up -d
+$ ./bin/rails server
+```
+
+Then you would get a [PostgreSQL](https://www.postgresql.org/) server running in Docker, with port `5432` exposed on host `192.168.99.100`.
+
 ## Installation
 
 First install the suspenders gem:
@@ -195,7 +219,7 @@ for Lion (OS X 10.7) or Mountain Lion (OS X 10.8).
 ~~We use [Capybara WebKit](https://github.com/thoughtbot/capybara-webkit) for
 full-stack JavaScript integration testing. It requires QT. Instructions for
 installing QT are
-[here](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit).~~ I don't use `capybara-webkit`, so don't bother.
+[here](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit).~~ I don't use `capybara-webkit`, so don't bother yourself.
 
 PostgreSQL needs to be installed and running for the `db:create` rake task.
 
