@@ -1,4 +1,4 @@
-# Suspenders [![CircleCI](https://circleci.com/gh/myceto/suspenders.svg?style=svg)](https://circleci.com/gh/myceto/suspenders)
+# Suspenders [![Build Status](https://travis-ci.org/myceto/suspenders.svg?branch=master)](https://travis-ci.org/myceto/suspenders)
 
 Suspenders is the base Rails application used at
 [thoughtbot](https://thoughtbot.com/).
