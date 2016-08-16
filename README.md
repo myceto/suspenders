@@ -1,9 +1,11 @@
-# Suspenders [![Build Status](https://secure.travis-ci.org/thoughtbot/suspenders.svg?branch=master)](http://travis-ci.org/thoughtbot/suspenders)
+# Suspenders [![CircleCI](https://circleci.com/gh/myceto/suspenders.svg?style=svg)](https://circleci.com/gh/myceto/suspenders)
 
 Suspenders is the base Rails application used at
 [thoughtbot](https://thoughtbot.com/).
 
   ![Suspenders boy](http://media.tumblr.com/1TEAMALpseh5xzf0Jt6bcwSMo1_400.png)
+
+## Development with Docker
 
 ## Installation
 
@@ -54,7 +56,7 @@ It includes application gems like:
   and patterns based on Bourbon, Neat and Bitters
 * [Simple Form](https://github.com/plataformatec/simple_form) for form markup
   and style
-* [Skylight](https://www.skylight.io/) for monitoring performance
+* ~~[Skylight](https://www.skylight.io/) for monitoring performance~~
 * [Title](https://github.com/calebthompson/title) for storing titles in
   translations
 * [Puma](https://github.com/puma/puma) to serve HTTP requests
@@ -77,9 +79,9 @@ And development gems like:
 
 And testing gems like:
 
-* [Capybara](https://github.com/jnicklas/capybara) and
+* ~~[Capybara](https://github.com/jnicklas/capybara) and
   [Capybara WebKit](https://github.com/thoughtbot/capybara-webkit) for
-  integration testing
+  integration testing~~
 * [Factory Girl](https://github.com/thoughtbot/factory_girl) for test data
 * [Formulaic](https://github.com/thoughtbot/formulaic) for integration testing
   HTML forms
@@ -88,6 +90,8 @@ And testing gems like:
 * [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers) for common
   RSpec matchers
 * [Timecop](https://github.com/ferndopolis/timecop-console) for testing time
+
+Since I don't use `capybara-webkit` and `skylight`, I remove these gems from my version.
 
 ## Other goodies
 
@@ -188,10 +192,10 @@ Snow Leopard (OS X 10.6).
 Use [Command Line Tools for Xcode](https://developer.apple.com/downloads/index.action)
 for Lion (OS X 10.7) or Mountain Lion (OS X 10.8).
 
-We use [Capybara WebKit](https://github.com/thoughtbot/capybara-webkit) for
+~~We use [Capybara WebKit](https://github.com/thoughtbot/capybara-webkit) for
 full-stack JavaScript integration testing. It requires QT. Instructions for
 installing QT are
-[here](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit).
+[here](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit).~~ I don't use `capybara-webkit`, so don't bother.
 
 PostgreSQL needs to be installed and running for the `db:create` rake task.
 

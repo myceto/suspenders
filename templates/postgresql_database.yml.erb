@@ -2,10 +2,12 @@ development: &default
   adapter: postgresql
   database: <%= app_name %>_development
   encoding: utf8
+  host: <%%= ENV.fetch("DB_HOST", "192.168.99.100") %>
   min_messages: warning
   pool: <%%= Integer(ENV.fetch("DB_POOL", 5)) %>
   reaping_frequency: <%%= Integer(ENV.fetch("DB_REAPING_FREQUENCY", 10)) %>
   timeout: 5000
+  username: <%%= ENV.fetch("DB_USER", "postgres") %>
 
 test:
   <<: *default

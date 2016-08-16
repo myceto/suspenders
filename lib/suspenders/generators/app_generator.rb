@@ -102,7 +102,8 @@ module Suspenders
       build :configure_ci
       build :configure_i18n_for_test_environment
       build :configure_action_mailer_in_specs
-      build :configure_capybara_webkit
+      # build :configure_capybara_webkit
+      build :configure_docker
     end
 
     def setup_production_environment
