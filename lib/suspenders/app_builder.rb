@@ -287,9 +287,9 @@ config.public_file_server.headers = {
       copy_file 'action_mailer.rb', 'spec/support/action_mailer.rb'
     end
 
-    def configure_capybara_webkit
-      copy_file "capybara_webkit.rb", "spec/support/capybara_webkit.rb"
-    end
+    # def configure_capybara_webkit
+    #   copy_file "capybara_webkit.rb", "spec/support/capybara_webkit.rb"
+    # end
 
     def configure_time_formats
       remove_file "config/locales/en.yml"
@@ -469,6 +469,10 @@ if defined? RSpec
 end
         EOS
       end
+    end
+
+    def configure_docker
+      copy_file "docker-compose.yml", "docker-compose.yml"
     end
 
     private
