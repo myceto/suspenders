@@ -1,3 +1,7 @@
+# CAUTION
+
+Due to no time for maintenance, this repository is deprecated, please use original [thoughtbot/suspenders](https://github.com/thoughtbot/suspenders) instead.
+
 # Suspenders [![Build Status](https://travis-ci.org/myceto/suspenders.svg?branch=master)](https://travis-ci.org/myceto/suspenders)
 
 Suspenders is the base Rails application used at
